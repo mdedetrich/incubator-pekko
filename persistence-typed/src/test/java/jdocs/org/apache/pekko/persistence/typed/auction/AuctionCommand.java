@@ -13,9 +13,10 @@
 
 package jdocs.org.apache.pekko.persistence.typed.auction;
 
-import java.util.UUID;
 import org.apache.pekko.Done;
 import org.apache.pekko.actor.typed.ActorRef;
+
+import java.util.UUID;
 
 /** An auction command. */
 public interface AuctionCommand {

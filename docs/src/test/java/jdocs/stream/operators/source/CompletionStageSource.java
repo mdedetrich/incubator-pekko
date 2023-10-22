@@ -14,9 +14,10 @@
 package jdocs.stream.operators.source;
 
 // #sourceCompletionStageSource
-import java.util.concurrent.CompletionStage;
 import org.apache.pekko.NotUsed;
 import org.apache.pekko.stream.javadsl.Source;
+
+import java.util.concurrent.CompletionStage;
 
 public class CompletionStageSource {
 

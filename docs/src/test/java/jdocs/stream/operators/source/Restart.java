@@ -13,8 +13,6 @@
 
 package jdocs.stream.operators.source;
 
-import java.time.Duration;
-import java.util.Arrays;
 import org.apache.pekko.NotUsed;
 import org.apache.pekko.actor.Cancellable;
 import org.apache.pekko.japi.Creator;
@@ -25,6 +23,9 @@ import org.apache.pekko.stream.javadsl.Keep;
 import org.apache.pekko.stream.javadsl.RestartSource;
 import org.apache.pekko.stream.javadsl.Sink;
 import org.apache.pekko.stream.javadsl.Source;
+
+import java.time.Duration;
+import java.util.Arrays;
 
 public class Restart {
   static org.apache.pekko.actor.ActorSystem system = org.apache.pekko.actor.ActorSystem.create();

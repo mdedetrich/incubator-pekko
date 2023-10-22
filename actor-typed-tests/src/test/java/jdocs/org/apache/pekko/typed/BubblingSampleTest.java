@@ -13,10 +13,6 @@
 
 package jdocs.org.apache.pekko.typed;
 
-import static jdocs.org.apache.pekko.typed.BubblingSample.Boss;
-import static jdocs.org.apache.pekko.typed.BubblingSample.Protocol;
-
-import java.time.Duration;
 import org.apache.pekko.actor.testkit.typed.javadsl.LogCapturing;
 import org.apache.pekko.actor.testkit.typed.javadsl.TestKitJunitResource;
 import org.apache.pekko.actor.testkit.typed.javadsl.TestProbe;
@@ -25,6 +21,11 @@ import org.junit.ClassRule;
 import org.junit.Rule;
 import org.junit.Test;
 import org.scalatestplus.junit.JUnitSuite;
+
+import java.time.Duration;
+
+import static jdocs.org.apache.pekko.typed.BubblingSample.Boss;
+import static jdocs.org.apache.pekko.typed.BubblingSample.Protocol;
 
 public class BubblingSampleTest extends JUnitSuite {
 

@@ -13,14 +13,12 @@
 
 package jdocs.io.japi;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertFalse;
-
 import java.net.InetSocketAddress;
 import java.util.LinkedList;
 import java.util.Queue;
-import org.apache.pekko.actor.AbstractActor;
+
 import org.apache.pekko.actor.ActorRef;
+import org.apache.pekko.actor.AbstractActor;
 import org.apache.pekko.event.Logging;
 import org.apache.pekko.event.LoggingAdapter;
 import org.apache.pekko.io.Tcp.CommandFailed;
@@ -31,6 +29,9 @@ import org.apache.pekko.io.Tcp.Write;
 import org.apache.pekko.io.Tcp.WritingResumed;
 import org.apache.pekko.io.TcpMessage;
 import org.apache.pekko.util.ByteString;
+
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertFalse;
 
 // #echo-handler
 public class EchoHandler extends AbstractActor {

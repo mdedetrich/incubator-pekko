@@ -14,17 +14,19 @@
 package jdocs.testkit;
 
 // #fullsample
-import java.time.Duration;
 import jdocs.AbstractJavaTest;
-import org.apache.pekko.actor.AbstractActor;
-import org.apache.pekko.actor.ActorRef;
-import org.apache.pekko.actor.ActorSystem;
-import org.apache.pekko.actor.Props;
 import org.apache.pekko.testkit.javadsl.TestKit;
 import org.junit.AfterClass;
 import org.junit.Assert;
 import org.junit.BeforeClass;
 import org.junit.Test;
+
+import org.apache.pekko.actor.ActorRef;
+import org.apache.pekko.actor.ActorSystem;
+import org.apache.pekko.actor.Props;
+import org.apache.pekko.actor.AbstractActor;
+
+import java.time.Duration;
 
 public class TestKitSampleTest extends AbstractJavaTest {
 

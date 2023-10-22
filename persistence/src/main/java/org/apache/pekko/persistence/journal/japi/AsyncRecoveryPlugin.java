@@ -14,8 +14,10 @@
 package org.apache.pekko.persistence.journal.japi;
 
 import java.util.function.Consumer;
-import org.apache.pekko.persistence.PersistentRepr;
+
 import scala.concurrent.Future;
+
+import org.apache.pekko.persistence.PersistentRepr;
 
 interface AsyncRecoveryPlugin {
   // #async-replay-plugin-api

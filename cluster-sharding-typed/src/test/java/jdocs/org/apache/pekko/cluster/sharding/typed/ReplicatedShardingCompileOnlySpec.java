@@ -13,7 +13,6 @@
 
 package jdocs.org.apache.pekko.cluster.sharding.typed;
 
-import java.util.*;
 import org.apache.pekko.actor.typed.ActorSystem;
 import org.apache.pekko.actor.typed.Behavior;
 import org.apache.pekko.cluster.sharding.typed.*;
@@ -21,6 +20,8 @@ import org.apache.pekko.cluster.sharding.typed.javadsl.Entity;
 import org.apache.pekko.cluster.sharding.typed.javadsl.EntityRef;
 import org.apache.pekko.persistence.typed.ReplicaId;
 import org.apache.pekko.persistence.typed.ReplicationId;
+
+import java.util.*;
 
 public class ReplicatedShardingCompileOnlySpec {
 

@@ -13,23 +13,24 @@
 
 package org.apache.pekko.stream.io;
 
-import static org.junit.Assert.assertEquals;
+import org.apache.pekko.stream.IOOperationIncompleteException;
+import org.apache.pekko.stream.IOResult;
+import org.apache.pekko.stream.StreamTest;
+import org.apache.pekko.testkit.PekkoJUnitActorSystemResource;
+import org.apache.pekko.stream.javadsl.Source;
+import org.apache.pekko.stream.javadsl.StreamConverters;
+import org.apache.pekko.stream.testkit.Utils;
+import org.apache.pekko.util.ByteString;
+import org.junit.Assert;
+import org.junit.ClassRule;
+import org.junit.Test;
 
 import java.io.OutputStream;
 import java.util.concurrent.CompletionStage;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.TimeUnit;
-import org.apache.pekko.stream.IOOperationIncompleteException;
-import org.apache.pekko.stream.IOResult;
-import org.apache.pekko.stream.StreamTest;
-import org.apache.pekko.stream.javadsl.Source;
-import org.apache.pekko.stream.javadsl.StreamConverters;
-import org.apache.pekko.stream.testkit.Utils;
-import org.apache.pekko.testkit.PekkoJUnitActorSystemResource;
-import org.apache.pekko.util.ByteString;
-import org.junit.Assert;
-import org.junit.ClassRule;
-import org.junit.Test;
+
+import static org.junit.Assert.assertEquals;
 
 public class OutputStreamSinkTest extends StreamTest {
   public OutputStreamSinkTest() {

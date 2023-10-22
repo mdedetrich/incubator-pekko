@@ -13,22 +13,23 @@
 
 package org.apache.pekko.stream.io;
 
-import static org.junit.Assert.assertTrue;
+import org.apache.pekko.stream.StreamTest;
+import org.apache.pekko.testkit.PekkoJUnitActorSystemResource;
+import org.apache.pekko.stream.javadsl.Sink;
+import org.apache.pekko.stream.javadsl.Source;
+import org.apache.pekko.stream.javadsl.StreamConverters;
+import org.apache.pekko.stream.testkit.Utils;
+import org.apache.pekko.util.ByteString;
+import org.junit.ClassRule;
+import org.junit.Test;
 
 import java.io.InputStream;
 import java.time.Duration;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
-import org.apache.pekko.stream.StreamTest;
-import org.apache.pekko.stream.javadsl.Sink;
-import org.apache.pekko.stream.javadsl.Source;
-import org.apache.pekko.stream.javadsl.StreamConverters;
-import org.apache.pekko.stream.testkit.Utils;
-import org.apache.pekko.testkit.PekkoJUnitActorSystemResource;
-import org.apache.pekko.util.ByteString;
-import org.junit.ClassRule;
-import org.junit.Test;
+
+import static org.junit.Assert.assertTrue;
 
 public class InputStreamSinkTest extends StreamTest {
   public InputStreamSinkTest() {

@@ -16,6 +16,7 @@ package jdocs.typed.tutorial_4;
 // #device-with-passivate
 
 import java.util.Optional;
+
 import org.apache.pekko.actor.typed.ActorRef;
 import org.apache.pekko.actor.typed.Behavior;
 import org.apache.pekko.actor.typed.PostStop;

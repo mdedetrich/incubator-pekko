@@ -20,7 +20,6 @@ import org.apache.pekko.actor.typed.ActorSystem;
 import org.apache.pekko.stream.javadsl.Sink;
 import org.apache.pekko.stream.javadsl.Source;
 import org.apache.pekko.stream.typed.javadsl.ActorSink;
-
 // #actor-sink-ref
 
 public class ActorSinkExample {

@@ -13,13 +13,14 @@
 
 package org.apache.pekko.actor.typed.receptionist;
 
-import java.time.Duration;
-import java.util.Set;
-import java.util.concurrent.CompletionStage;
 import org.apache.pekko.actor.typed.ActorRef;
 import org.apache.pekko.actor.typed.ActorSystem;
 import org.apache.pekko.actor.typed.javadsl.AskPattern;
 import org.apache.pekko.actor.typed.javadsl.Behaviors;
+
+import java.time.Duration;
+import java.util.Set;
+import java.util.concurrent.CompletionStage;
 
 public class ReceptionistApiTest {
 

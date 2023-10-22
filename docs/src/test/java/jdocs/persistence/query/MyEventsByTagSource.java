@@ -13,13 +13,6 @@
 
 package jdocs.persistence.query;
 
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.time.Duration;
-import java.util.ArrayList;
-import java.util.LinkedList;
-import java.util.List;
 import org.apache.pekko.actor.ActorSystem;
 import org.apache.pekko.persistence.query.EventEnvelope;
 import org.apache.pekko.persistence.query.Offset;
@@ -27,6 +20,14 @@ import org.apache.pekko.serialization.Serialization;
 import org.apache.pekko.serialization.SerializationExtension;
 import org.apache.pekko.stream.*;
 import org.apache.pekko.stream.stage.*;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.time.Duration;
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.List;
 
 // #events-by-tag-publisher
 public class MyEventsByTagSource extends GraphStage<SourceShape<EventEnvelope>> {

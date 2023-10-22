@@ -13,14 +13,15 @@
 
 package org.apache.pekko.actor.typed.javadsl;
 
-import static org.apache.pekko.actor.typed.javadsl.Behaviors.*;
+import org.apache.pekko.actor.typed.*;
+import org.apache.pekko.actor.typed.TypedActorContext;
 
 import java.math.BigDecimal;
 import java.math.BigInteger;
 import java.time.Duration;
 import java.util.concurrent.CompletionStage;
-import org.apache.pekko.actor.typed.*;
-import org.apache.pekko.actor.typed.TypedActorContext;
+
+import static org.apache.pekko.actor.typed.javadsl.Behaviors.*;
 
 @SuppressWarnings("unused")
 public class ActorCompile {

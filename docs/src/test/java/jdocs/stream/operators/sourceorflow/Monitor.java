@@ -13,11 +13,6 @@
 
 package jdocs.stream.operators.sourceorflow;
 
-import java.time.Duration;
-import java.util.Arrays;
-import java.util.concurrent.CompletionStage;
-import java.util.concurrent.ExecutionException;
-import java.util.concurrent.TimeoutException;
 import org.apache.pekko.Done;
 import org.apache.pekko.actor.ActorSystem;
 import org.apache.pekko.japi.Pair;
@@ -26,6 +21,12 @@ import org.apache.pekko.stream.FlowMonitorState;
 import org.apache.pekko.stream.javadsl.Keep;
 import org.apache.pekko.stream.javadsl.Sink;
 import org.apache.pekko.stream.javadsl.Source;
+
+import java.time.Duration;
+import java.util.Arrays;
+import java.util.concurrent.CompletionStage;
+import java.util.concurrent.ExecutionException;
+import java.util.concurrent.TimeoutException;
 
 /** */
 public class Monitor {

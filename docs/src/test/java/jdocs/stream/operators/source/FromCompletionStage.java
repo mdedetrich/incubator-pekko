@@ -14,10 +14,11 @@
 package jdocs.stream.operators.source;
 
 // #sourceFromCompletionStage
-import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.CompletionStage;
-import org.apache.pekko.Done;
+import java.util.concurrent.CompletableFuture;
+
 import org.apache.pekko.NotUsed;
+import org.apache.pekko.Done;
 import org.apache.pekko.actor.typed.ActorSystem;
 import org.apache.pekko.stream.javadsl.*;
 

@@ -13,10 +13,11 @@
 
 package jdocs.stream.operators.sourceorflow;
 
-import java.util.Arrays;
 import org.apache.pekko.NotUsed;
 import org.apache.pekko.actor.typed.ActorSystem;
 import org.apache.pekko.stream.javadsl.Source;
+
+import java.util.Arrays;
 
 public class Sliding {
 

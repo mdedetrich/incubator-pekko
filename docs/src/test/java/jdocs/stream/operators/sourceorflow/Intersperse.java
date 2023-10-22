@@ -13,9 +13,10 @@
 
 package jdocs.stream.operators.sourceorflow;
 
-import java.util.Arrays;
 import org.apache.pekko.actor.ActorSystem;
 import org.apache.pekko.stream.javadsl.Source;
+
+import java.util.Arrays;
 
 public class Intersperse {
   public static void main(String[] args) {

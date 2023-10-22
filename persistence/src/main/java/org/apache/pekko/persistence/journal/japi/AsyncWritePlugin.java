@@ -14,8 +14,10 @@
 package org.apache.pekko.persistence.journal.japi;
 
 import java.util.Optional;
-import org.apache.pekko.persistence.*;
+
 import scala.concurrent.Future;
+
+import org.apache.pekko.persistence.*;
 
 interface AsyncWritePlugin {
   // #async-write-plugin-api

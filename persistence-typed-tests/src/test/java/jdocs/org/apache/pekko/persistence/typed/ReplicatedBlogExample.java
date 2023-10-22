@@ -13,8 +13,6 @@
 
 package jdocs.org.apache.pekko.persistence.typed;
 
-import java.util.Optional;
-import java.util.Set;
 import org.apache.pekko.Done;
 import org.apache.pekko.actor.typed.ActorRef;
 import org.apache.pekko.actor.typed.Behavior;
@@ -30,6 +28,9 @@ import org.apache.pekko.persistence.typed.javadsl.EventHandler;
 import org.apache.pekko.persistence.typed.javadsl.ReplicatedEventSourcedBehavior;
 import org.apache.pekko.persistence.typed.javadsl.ReplicatedEventSourcing;
 import org.apache.pekko.persistence.typed.javadsl.ReplicationContext;
+
+import java.util.Optional;
+import java.util.Set;
 
 interface ReplicatedBlogExample {
 

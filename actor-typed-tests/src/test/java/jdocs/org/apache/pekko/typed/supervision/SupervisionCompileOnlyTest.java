@@ -13,9 +13,10 @@
 
 package jdocs.org.apache.pekko.typed.supervision;
 
-import java.time.Duration;
 import org.apache.pekko.actor.typed.*;
 import org.apache.pekko.actor.typed.javadsl.Behaviors;
+
+import java.time.Duration;
 
 public class SupervisionCompileOnlyTest {
   // #wrap

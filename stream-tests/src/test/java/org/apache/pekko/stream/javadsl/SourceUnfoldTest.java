@@ -13,10 +13,11 @@
 
 package org.apache.pekko.stream.javadsl;
 
-import java.util.Optional;
 import org.apache.pekko.NotUsed;
 import org.apache.pekko.japi.Pair;
 import org.apache.pekko.japi.function.Function;
+
+import java.util.Optional;
 
 public class SourceUnfoldTest {
 

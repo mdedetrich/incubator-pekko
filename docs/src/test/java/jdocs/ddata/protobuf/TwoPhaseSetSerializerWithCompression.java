@@ -14,6 +14,7 @@
 package jdocs.ddata.protobuf;
 
 import jdocs.ddata.TwoPhaseSet;
+
 import org.apache.pekko.actor.ExtendedActorSystem;
 
 public class TwoPhaseSetSerializerWithCompression extends TwoPhaseSetSerializer {

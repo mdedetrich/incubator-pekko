@@ -13,11 +13,12 @@
 
 package jdocs.circuitbreaker;
 
-import java.time.Duration;
-import java.util.Optional;
-import java.util.function.BiFunction;
 import org.apache.pekko.actor.AbstractActor;
 import org.apache.pekko.pattern.CircuitBreaker;
+import java.time.Duration;
+
+import java.util.Optional;
+import java.util.function.BiFunction;
 
 public class EvenNoFailureJavaExample extends AbstractActor {
   // #even-no-as-failure

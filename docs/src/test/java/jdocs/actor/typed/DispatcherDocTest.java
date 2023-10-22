@@ -13,9 +13,10 @@
 
 package jdocs.actor.typed;
 
+import scala.concurrent.ExecutionContextExecutor;
+
 import org.apache.pekko.actor.typed.*;
 import org.apache.pekko.actor.typed.javadsl.*;
-import scala.concurrent.ExecutionContextExecutor;
 
 @SuppressWarnings("unused")
 public class DispatcherDocTest {

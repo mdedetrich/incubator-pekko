@@ -13,9 +13,10 @@
 
 package org.apache.pekko.testkit;
 
-import com.typesafe.config.Config;
 import org.apache.pekko.actor.ActorSystem;
+
 import org.apache.pekko.testkit.javadsl.TestKit;
+import com.typesafe.config.Config;
 import org.junit.rules.ExternalResource;
 
 /**

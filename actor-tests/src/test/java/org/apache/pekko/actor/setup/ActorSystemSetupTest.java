@@ -13,11 +13,12 @@
 
 package org.apache.pekko.actor.setup;
 
-import static org.junit.Assert.*;
-
-import java.util.Optional;
 import org.junit.Test;
 import org.scalatestplus.junit.JUnitSuite;
+
+import java.util.Optional;
+
+import static org.junit.Assert.*;
 
 public class ActorSystemSetupTest extends JUnitSuite {
 

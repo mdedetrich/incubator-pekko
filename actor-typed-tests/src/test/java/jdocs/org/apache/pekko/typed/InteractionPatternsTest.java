@@ -13,8 +13,18 @@
 
 package jdocs.org.apache.pekko.typed;
 
-import static jdocs.org.apache.pekko.typed.InteractionPatternsTest.Samples.*;
-import static org.junit.Assert.assertEquals;
+import org.apache.pekko.Done;
+import org.apache.pekko.actor.testkit.typed.javadsl.LogCapturing;
+import org.apache.pekko.actor.testkit.typed.javadsl.TestKitJunitResource;
+import org.apache.pekko.actor.typed.ActorRef;
+import org.apache.pekko.actor.typed.ActorSystem;
+import org.apache.pekko.actor.typed.Behavior;
+import org.apache.pekko.actor.typed.javadsl.*;
+import org.apache.pekko.actor.testkit.typed.javadsl.TestProbe;
+import org.junit.ClassRule;
+import org.junit.Rule;
+import org.junit.Test;
+import org.scalatestplus.junit.JUnitSuite;
 
 import java.net.URI;
 import java.time.Duration;
@@ -22,18 +32,9 @@ import java.util.*;
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.CompletionStage;
 import java.util.concurrent.TimeUnit;
-import org.apache.pekko.Done;
-import org.apache.pekko.actor.testkit.typed.javadsl.LogCapturing;
-import org.apache.pekko.actor.testkit.typed.javadsl.TestKitJunitResource;
-import org.apache.pekko.actor.testkit.typed.javadsl.TestProbe;
-import org.apache.pekko.actor.typed.ActorRef;
-import org.apache.pekko.actor.typed.ActorSystem;
-import org.apache.pekko.actor.typed.Behavior;
-import org.apache.pekko.actor.typed.javadsl.*;
-import org.junit.ClassRule;
-import org.junit.Rule;
-import org.junit.Test;
-import org.scalatestplus.junit.JUnitSuite;
+
+import static jdocs.org.apache.pekko.typed.InteractionPatternsTest.Samples.*;
+import static org.junit.Assert.assertEquals;
 
 public class InteractionPatternsTest extends JUnitSuite {
 

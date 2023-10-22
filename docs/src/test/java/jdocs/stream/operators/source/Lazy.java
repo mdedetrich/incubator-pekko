@@ -13,8 +13,6 @@
 
 package jdocs.stream.operators.source;
 
-import java.util.Optional;
-import java.util.concurrent.CompletionStage;
 import org.apache.pekko.NotUsed;
 import org.apache.pekko.actor.ActorSystem;
 import org.apache.pekko.japi.Pair;
@@ -22,6 +20,9 @@ import org.apache.pekko.stream.javadsl.RunnableGraph;
 import org.apache.pekko.stream.javadsl.Sink;
 import org.apache.pekko.stream.javadsl.SinkQueueWithCancel;
 import org.apache.pekko.stream.javadsl.Source;
+
+import java.util.Optional;
+import java.util.concurrent.CompletionStage;
 
 public class Lazy {
 

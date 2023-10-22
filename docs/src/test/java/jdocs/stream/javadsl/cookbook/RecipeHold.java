@@ -13,7 +13,6 @@
 
 package jdocs.stream.javadsl.cookbook;
 
-import java.util.concurrent.TimeUnit;
 import org.apache.pekko.actor.ActorSystem;
 import org.apache.pekko.japi.Pair;
 import org.apache.pekko.stream.*;
@@ -30,6 +29,8 @@ import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.Test;
 import scala.concurrent.duration.FiniteDuration;
+
+import java.util.concurrent.TimeUnit;
 
 public class RecipeHold extends RecipeTest {
   static ActorSystem system;

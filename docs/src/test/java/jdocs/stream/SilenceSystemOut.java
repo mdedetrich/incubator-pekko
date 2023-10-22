@@ -13,8 +13,9 @@
 
 package jdocs.stream;
 
-import java.util.function.Predicate;
 import org.apache.pekko.actor.ActorRef;
+
+import java.util.function.Predicate;
 
 /**
  * Acts as if `System.out.println()` yet swallows all messages. Useful for putting printlines in

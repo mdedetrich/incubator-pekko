@@ -14,8 +14,8 @@
 package jdocs.actor;
 
 // #my-stopping-actor
-import org.apache.pekko.actor.AbstractActor;
 import org.apache.pekko.actor.ActorRef;
+import org.apache.pekko.actor.AbstractActor;
 
 public class MyStoppingActor extends AbstractActor {
 

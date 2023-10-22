@@ -13,19 +13,20 @@
 
 package org.apache.pekko.persistence.typed.javadsl;
 
-import static org.apache.pekko.actor.typed.javadsl.AskPattern.ask;
+import org.apache.pekko.actor.typed.Behavior;
+import org.apache.pekko.actor.typed.javadsl.ActorContext;
+import org.apache.pekko.actor.typed.ActorRef;
+import org.apache.pekko.actor.typed.Scheduler;
+import org.apache.pekko.actor.typed.javadsl.Behaviors;
+import org.apache.pekko.japi.function.Procedure;
+import org.apache.pekko.persistence.typed.*;
+import org.apache.pekko.actor.testkit.typed.javadsl.TestInbox;
 
 import java.time.Duration;
 import java.util.*;
 import java.util.concurrent.CompletionStage;
-import org.apache.pekko.actor.testkit.typed.javadsl.TestInbox;
-import org.apache.pekko.actor.typed.ActorRef;
-import org.apache.pekko.actor.typed.Behavior;
-import org.apache.pekko.actor.typed.Scheduler;
-import org.apache.pekko.actor.typed.javadsl.ActorContext;
-import org.apache.pekko.actor.typed.javadsl.Behaviors;
-import org.apache.pekko.japi.function.Procedure;
-import org.apache.pekko.persistence.typed.*;
+
+import static org.apache.pekko.actor.typed.javadsl.AskPattern.ask;
 
 public class PersistentActorCompileOnlyTest {
 

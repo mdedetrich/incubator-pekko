@@ -13,13 +13,24 @@
 
 package jdocs.stream;
 
-import static jdocs.stream.TwitterStreamQuickstartDocTest.Model.PEKKO;
-import static jdocs.stream.TwitterStreamQuickstartDocTest.Model.tweets;
-import static junit.framework.TestCase.assertTrue;
-import static org.apache.pekko.pattern.Patterns.ask;
+import org.apache.pekko.Done;
+import org.apache.pekko.NotUsed;
+import org.apache.pekko.actor.*;
+import org.apache.pekko.stream.*;
+import org.apache.pekko.stream.javadsl.*;
+import org.apache.pekko.testkit.TestProbe;
+import org.apache.pekko.testkit.javadsl.TestKit;
+import org.apache.pekko.util.Timeout;
 
 import com.typesafe.config.Config;
 import com.typesafe.config.ConfigFactory;
+import jdocs.AbstractJavaTest;
+import jdocs.stream.TwitterStreamQuickstartDocTest.Model.Author;
+import jdocs.stream.TwitterStreamQuickstartDocTest.Model.Tweet;
+import org.junit.AfterClass;
+import org.junit.BeforeClass;
+import org.junit.Test;
+
 import java.time.Duration;
 import java.util.Arrays;
 import java.util.HashSet;
@@ -31,20 +42,10 @@ import java.util.concurrent.CompletionStage;
 import java.util.concurrent.Executor;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicInteger;
-import jdocs.AbstractJavaTest;
-import jdocs.stream.TwitterStreamQuickstartDocTest.Model.Author;
-import jdocs.stream.TwitterStreamQuickstartDocTest.Model.Tweet;
-import org.apache.pekko.Done;
-import org.apache.pekko.NotUsed;
-import org.apache.pekko.actor.*;
-import org.apache.pekko.stream.*;
-import org.apache.pekko.stream.javadsl.*;
-import org.apache.pekko.testkit.TestProbe;
-import org.apache.pekko.testkit.javadsl.TestKit;
-import org.apache.pekko.util.Timeout;
-import org.junit.AfterClass;
-import org.junit.BeforeClass;
-import org.junit.Test;
+import static org.apache.pekko.pattern.Patterns.ask;
+import static jdocs.stream.TwitterStreamQuickstartDocTest.Model.PEKKO;
+import static jdocs.stream.TwitterStreamQuickstartDocTest.Model.tweets;
+import static junit.framework.TestCase.assertTrue;
 
 @SuppressWarnings("ALL")
 public class IntegrationDocTest extends AbstractJavaTest {

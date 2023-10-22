@@ -13,13 +13,14 @@
 
 package jdocs.pattern;
 
-import java.time.Duration;
-import java.util.concurrent.CompletionStage;
-import java.util.concurrent.TimeUnit;
-import org.apache.pekko.actor.AbstractActor;
 import org.apache.pekko.actor.ActorRef;
 import org.apache.pekko.actor.ActorRefFactory;
 import org.apache.pekko.actor.Props;
+import org.apache.pekko.actor.AbstractActor;
+
+import java.time.Duration;
+import java.util.concurrent.CompletionStage;
+import java.util.concurrent.TimeUnit;
 
 public class SupervisedAskSpec {
 
