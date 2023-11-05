@@ -37,8 +37,6 @@ object Dependencies {
 
   val scala212Version = "2.12.18"
   val scala213Version = "2.13.12"
-  // To get the fix for https://github.com/lampepfl/dotty/issues/13106
-  // and restored static forwarders
   val scala3Version = "3.3.1"
   val allScalaVersions = Seq(scala213Version, scala212Version, scala3Version)
 
@@ -57,7 +55,7 @@ object Dependencies {
   object Compile {
     // Compile
 
-    val config = "com.typesafe" % "config" % "1.4.2"
+    val config = "com.typesafe" % "config" % "1.4.3"
     val `netty-transport` = "io.netty" % "netty-transport" % nettyVersion
     val `netty-handler` = "io.netty" % "netty-handler" % nettyVersion
 
@@ -134,7 +132,7 @@ object Dependencies {
     object TestDependencies {
       val bcpkix = "org.bouncycastle" % "bcpkix-jdk18on" % "1.76" % Test
       val commonsMath = "org.apache.commons" % "commons-math" % "2.2" % Test
-      val commonsIo = "commons-io" % "commons-io" % "2.14.0" % Test
+      val commonsIo = "commons-io" % "commons-io" % "2.15.0" % Test
       val commonsCodec = "commons-codec" % "commons-codec" % "1.16.0" % Test
       val commonsCompress = "org.apache.commons" % "commons-compress" % "1.24.0" % Test
       val junit = "junit" % "junit" % junitVersion % Test
