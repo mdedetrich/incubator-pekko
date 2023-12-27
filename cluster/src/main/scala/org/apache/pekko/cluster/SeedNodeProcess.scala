@@ -84,8 +84,6 @@ private[cluster] abstract class SeedNodeProcess(joinConfigCompatChecker: JoinCon
       ConfigUtil.addAkkaConfig(configToValidate, akkaVersion)
     else configToValidate
 
-    logInfo("init-join config = " + adjustedConfig)
-
     seedNodes.foreach { a =>
       context.actorSelection(context.parent.path.toStringWithAddress(a)) ! InitJoin(adjustedConfig)
     }
